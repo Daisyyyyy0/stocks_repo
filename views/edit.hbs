@@ -1,0 +1,8 @@
+<form action="/stocks/{{ stock.id }}?_method=PUT" method="POST">
+    <input type="text" placeholder="請輸入股票代號..." name="stockName" , value="{{stock.stockName}}">
+    <input type="text" placeholder="請輸入股票代號..." name="stock_number" , value="{{stock.stock_number}}">
+    <input type=" number" placeholder="價格..." name="price" , value="{{stock.price}}">
+
+    <button type=" submit">Save</button>
+    <a href="/stocks">back</a>
+</form>

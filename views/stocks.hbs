@@ -1,0 +1,11 @@
+<a href="/stocks/new">新增持有</a>
+<ul>
+    {{#each stocks}}
+    <li>
+        {{this.stock_number}} {{this.stockName}} {{this.price}}
+        <a href="stocks/{{ this.stock_number }}">detail</a>
+        <a href="stocks/{{ this.id }}/edit">編輯</a>
+
+    </li>
+    {{/each}}
+</ul>
